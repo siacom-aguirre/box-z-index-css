@@ -1,0 +1,76 @@
+body{
+    margin:150px;
+    animation:fondoanim 10s ease infinite;
+  }
+  @keyframes fondoanim{
+    0%{background-color:white;}
+    25%{background-color:green;}
+    50%{background-color:grey;}
+    75%{background-color:yellow;}
+    100%{background-color:white;}
+  }
+  
+  .testeo1, 
+  .testeo2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    position:absolute;
+    text-align:center;
+    color:white;
+  }
+  
+  .testeo1{
+    margin-top:15px;
+    animation:testeo1 10s ease infinite;
+  }
+  .testeo2 {
+    margin-left:15px;
+    animation:testeo2 10s ease infinite;
+  }
+  @keyframes testeo1{
+    0%{
+      z-index:0;
+      transform:scale(0.5);
+      backdrop-filter: blur(5px);
+      background:rgba(121,0,0,1);
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    }
+    50%{
+      z-index:1;
+      transform:scale(1);
+      backdrop-filter: blur(5px);
+      background:rgba(121,0,0,.8);
+    box-shadow:40px 40px 10px rgba(0,0,0,.2);
+    }
+    100%{
+      z-index:0;
+      transform:scale(0.5);
+      backdrop-filter: blur(5px);
+      background:rgba(121,0,0,1);
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    }
+  }
+  @keyframes testeo2{
+    0%{
+      z-index:1;
+      transform:scale(1);
+      backdrop-filter: blur(5px);
+      background:rgba(0,121,0,.8);
+      box-shadow:40px 40px 10px rgba(0,0,0,.2);
+    }
+    50%{
+      z-index:0;
+      transform:scale(0.5);
+      backdrop-filter: blur(5px);
+      background:rgba(0,121,0,1);
+      box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    }
+    100%{
+      z-index:1;
+      transform:scale(1);
+      backdrop-filter: blur(5px);
+      background:rgba(0,121,0,.8);
+      box-shadow:40px 40px 10px rgba(0,0,0,.2);
+    }
+  }
